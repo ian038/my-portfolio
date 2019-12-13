@@ -12,7 +12,7 @@ function App() {
         <Header className="header-color" title="Title" scroll>
             <Navigation>
                 <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
+                {/* <Link to="/resume">Resume</Link> */}
                 <Link to="/aboutme">About Me</Link>
                 <Link to="work">Work</Link>
                 <Link to="contact">Contact</Link>
@@ -21,7 +21,7 @@ function App() {
         <Drawer title="Title">
             <Navigation>
                 <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
+                {/* <Link to="/resume">Resume</Link> */}
                 <Link to="/aboutme">About Me</Link>
                 <Link to="work">Work</Link>
                 <Link to="contact">Contact</Link>
