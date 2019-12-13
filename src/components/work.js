@@ -14,7 +14,7 @@ class Work extends Component {
                 <div className="projects-grid">
                     {/* Project 1 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>React Project #1</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg) center / cover'}}>React Project #1</CardTitle>
                         <CardText>
                             The portfolio
                         </CardText>
@@ -30,7 +30,7 @@ class Work extends Component {
 
                     {/* Project 2 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>React Project #2</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg) center / cover'}}>React Project #2</CardTitle>
                         <CardText>
                             The portfolio
                         </CardText>
@@ -46,7 +46,7 @@ class Work extends Component {
 
                     {/* Project 3 */}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover'}}>React Project #3</CardTitle>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg) center / cover'}}>React Project #3</CardTitle>
                         <CardText>
                             The portfolio
                         </CardText>
