@@ -18,7 +18,6 @@ class Landing extends Component {
                             <h1>I am Ian.</h1>
                             <hr/>
                             <h4>A hacker, tinkerer and a creator. I live to build, create and innovate.</h4>
-                            {/* <p>HTML | CSS | Javascript | React | MongoDB | NodeJs | Express | Google Actions | Amazon Alexa</p> */}
                             <div className="social-links">
                                 {/* LinkedIn */}
                                 <a href="https://www.linkedin.com/in/chai-ian-phua-915452b9/" rel="noopener noreferrer" target="_blank">

@@ -21,7 +21,7 @@ class Work extends Component {
                         <CardActions border>
                             <Button colored href="https://github.com/ian038/my-portfolio">GitHub</Button>
                             <Button colored>CodePen</Button>
-                            <Button colored href="https://my-portfolio-96172.firebaseapp.com">Firebase</Button>
+                            <Button colored href="https://my-portfolio-96172.firebaseapp.com">Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -32,12 +32,12 @@ class Work extends Component {
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg) center / cover'}}>React Project #2</CardTitle>
                         <CardText>
-                            The portfolio
+                            Coming soon
                         </CardText>
                         <CardActions border>
                             <Button colored>GitHub</Button>
                             <Button colored>CodePen</Button>
-                            <Button colored>Firebase</Button>
+                            <Button colored>Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
@@ -48,12 +48,12 @@ class Work extends Component {
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://frontendmasters.com/static-assets/learn/og-learning-path-react.jpg) center / cover'}}>React Project #3</CardTitle>
                         <CardText>
-                            The portfolio
+                            Coming soon
                         </CardText>
                         <CardActions border>
                             <Button colored>GitHub</Button>
                             <Button colored>CodePen</Button>
-                            <Button colored>Firebase</Button>
+                            <Button colored>Live Demo</Button>
                         </CardActions>
                         <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share" />
