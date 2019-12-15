@@ -53,7 +53,7 @@ class About extends Component {
                             start="Jan 2019"
                             end="Current"
                             jobName="Software Engineer"
-                            jobDescription="Worked as a freelancing software engineer. Built multiple voice apps for Amazon Alexa and Google Actions. Made extensive use of Firebase to store customers of clients. Also designed and built out webpages and websites using Javascript front end libraries such as React and Vue for UI/UX."
+                            jobDescription="Worked as a freelancing software engineer. Built multiple voice apps for Amazon Alexa and Google Actions. Made extensive use of Firebase to store customer data of clients. Also designed and built out webpages and websites using Javascript front end libraries such as React and Vue for UI/UX."
                         />
                         <Experience
                             start="Oct 2018"
