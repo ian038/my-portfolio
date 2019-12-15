@@ -20,18 +20,16 @@ class About extends Component {
                         </div>
                         <h2 style={{paddingTop: '2em'}}>Chai Ian Phua</h2>
                         <h4 style={{color: 'gray'}}>Software Engineer</h4>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                        <p>Fill out</p>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                        <h5>Address</h5>
-                        <p>1 Hacker Way Menlo Park, 94025</p>
+                        <hr style={{borderTop: '3px solid #833fb2', width: '95%'}}/>
+                        <p>Hello, pleased to meet you and welcome to my portfolio!</p>
+                        <hr style={{borderTop: '3px solid #833fb2', width: '95%'}}/>
                         <h5>Phone</h5>
                         <p>(614) 607-0882</p>
                         <h5>Email</h5>
                         <p>ianphua3@gmail.com</p>
                         <h5>Web</h5>
-                        <p>mywebsite.com</p>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+                        <p>my-portfolio-96172.firebaseapp.com.com</p>
+                        <hr style={{borderTop: '3px solid #833fb2', width: '95%'}}/>
                     </Cell>
                     <Cell className="resume-right-col"col={8}>
                         <h2>Education</h2>
