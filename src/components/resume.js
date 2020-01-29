@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
-import Skills from './skills';
 
 
 class About extends Component {
@@ -60,43 +59,6 @@ class About extends Component {
                             jobDescription="Hired as an aide at Haugland Learning Center. Learnt to practice Behavioral Psychology using techniques to record behavior data and to use recorded data to customize an educational plan for children with Autism Spectrum Disorder."
                         />
                         <hr style={{ borderTop: '3px solid #e22947' }} />
-                        <h2>Skills</h2>
-                        <Skills
-                            skill="Javascript"
-                            progress={75}
-                        />
-                        <Skills
-                            skill="NodeJS"
-                            progress={75}
-                        />
-                        <Skills
-                            skill="MongoDB"
-                            progress={70}
-                        />
-                        <Skills
-                            skill="Express"
-                            progress={75}
-                        />
-                        <Skills
-                            skill="Amazon Alexa"
-                            progress={85}
-                        />
-                        <Skills
-                            skill="Google Actions"
-                            progress={85}
-                        />
-                        <Skills
-                            skill="HTML/CSS"
-                            progress={80}
-                        />
-                        <Skills
-                            skill="Firebase"
-                            progress={50}
-                        />
-                        <Skills
-                            skill="React"
-                            progress={25}
-                        />
                     </Cell>
                 </Grid>
             </div>
