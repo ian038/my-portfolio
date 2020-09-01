@@ -1,6 +1,11 @@
 /* Landing Page */
-.header-color {
+#header-color {
     background-image: url(./image.jpg);
+}
+
+.drawer_links {
+    text-decoration: none;
+    color: black;
 }
 
 .landing-grid {
