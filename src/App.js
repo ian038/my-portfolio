@@ -69,7 +69,7 @@ function App() {
     };
 
   return (
-    <div className="demo-big-content">
+    <div>
         <AppBar position="fixed" id="header-color" className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}>

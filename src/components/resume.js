@@ -15,8 +15,8 @@ export default function About() {
 
     return (
         <div className={classes.root}>
-          <Grid container spacing={3} direction="row">
-            <Grid item style={{ marginLeft: 40 }} xs={3}>
+          <Grid container spacing={5} justify="center">
+            <Grid item xs={3}>
             <div style={{ textAlign: 'center' }}>
                 <img
                 src="https://cdn2.iconfinder.com/data/icons/teen-people-face-avatar-6/500/teen_109-512.png"
@@ -24,21 +24,19 @@ export default function About() {
                 style={{ height: '200px', marginTop: 100 }}
                 />
             </div>
-            <h2 style={{ paddingTop: '1em' }}>Chai Ian Phua</h2>
-            <h4 style={{ color: 'gray' }}>Software Engineer</h4>
-            <hr style={{ borderTop: '3px solid #833fb2', width: '95%' }} />
+            <h2 style={{ paddingTop: '1em', fontSize: '35px' }}>Chai Ian Phua</h2>
+            <h3 style={{ color: 'gray' }}>Software Engineer</h3>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
             <p>Hello, pleased to meet you and welcome to my portfolio!</p>
-            <hr style={{ borderTop: '3px solid #833fb2', width: '95%' }} />
-            <h5>Phone</h5>
-            <p>(614) 607-0882</p>
-            <h5>Email</h5>
-            <p>ianphua3@gmail.com</p>
-            <h5>Web</h5>
-            <p>my-portfolio-96172.firebaseapp.com</p>
-            <hr style={{ borderTop: '3px solid #833fb2', width: '95%' }} />
+            <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
+            <h5 style={{ fontSize: '18px' }}>Phone</h5>
+            <p style={{ fontSize: '15px' }}>(614) 607-0882</p>
+            <h5 style={{ fontSize: '18px' }}>Email</h5>
+            <p style={{ fontSize: '15px' }}>ianphua3@gmail.com</p>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
             </Grid>
-            <Grid item xs={8} style={{ marginTop: 95, marginLeft: 50 }} className="resume-right-col">
-            <h2>Education</h2>
+            <Grid item xs={8} style={{ marginTop: 100, marginLeft: 50 }} className="resume-right-col">
+            <h2 style={{ fontSize: '35px' }}>Education</h2>
             <Education
             start="Jan 2020"
             end="April 2022"
@@ -49,15 +47,15 @@ export default function About() {
             start="Jan 2016"
             end="Aug 2018"
             schoolName="The Ohio State University"
-            schoolDescription="Transfered from Sunway University to attend The Ohio State University. Majored in Psychology and eventually graduated with a Bachelor of Arts in August 2018."
+            schoolDescription="Attended The Ohio State University. Majored in Psychology and eventually graduated with a Bachelor of Arts in August 2018."
             />
-            <hr style={{ borderTop: '3px solid #e22947' }} />
-            <h2>Experience</h2>
+            <hr style={{ borderTop: '3px solid red' }} />
+            <h2 style={{ fontSize: '35px' }}>Experience</h2>
             <Experience
             start="Jan 2019"
             end="Feb 2020"
             jobName="Software Engineer Intern"
-            jobDescription="Worked at Voice First Tech. Built multiple voice apps for Amazon Alexa and Google Actions. Made extensive use of Firebase to store customer data of clients. Also designed and built out webpages and websites using Javascript front end libraries such as React and Vue for UI/UX."
+            jobDescription="Interned at Voice First Tech. Built multiple voice apps for Amazon Alexa and Google Actions. Made extensive use of Firebase to store customer data of clients. Also designed and built out webpages and websites using Javascript front end libraries such as React and Vue for UI/UX."
             />
             <Experience
             start="Oct 2018"
@@ -71,7 +69,7 @@ export default function About() {
             jobName="Student Manager"
             jobDescription="Delegated tasks to employees to ensure facility's daily goals are met through team work. Assessed and evaluated errors and risks to minimize production downtime."
             />
-            <hr style={{ borderTop: '3px solid #e22947' }} />
+            <hr style={{ borderTop: '3px solid red' }} />
             </Grid>
       </Grid>
     </div>
