@@ -230,6 +230,33 @@ export default function Work() {
                     </CardActions>
                 </Card>
                 </Grid>
+                                <Grid item xs={2} style={{ marginTop: 80, marginLeft: 20 }}>
+                <Card shadow={5} style={{maxWidth: '450', margin: 'auto' }}>
+                    <CardActionArea>
+                        <CardMedia 
+                            component="img"
+                            image="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg"
+                            height="176"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Timestamp Microservice
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                Built with FreeCodeCamp Boilerplate
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Button size="small" color="primary" href="https://github.com/ian038/fcc_timestamp_microservice">
+                            GitHub
+                        </Button>
+                        <Button size="small" color="primary" href="https://ProfusePleasedChord--five-nine.repl.co">
+                            Live Demo
+                        </Button>
+                    </CardActions>
+                </Card>
+                </Grid>
             </Grid>
         </div>
         );
