@@ -13,7 +13,7 @@ class Contact extends Component {
                             alt="avatar"
                             style={{ height: "250px" }}
                         />
-                        <p style={{ margin: 'auto', paddingTop: '1em' }}>HTML/CSS | Javascript | MSSQL | MySQL | MongoDB | Express | VB.Net | Python | Java</p>
+                        <p style={{ margin: 'auto', paddingTop: '1em' }}>HTML/CSS | Javascript | SQL | NoSQL | Express | VB.Net | Python | Java</p>
                     </Grid>
                     <Grid item xs={5} style={{ marginTop: 70 }}>
                         <h1>Contact Me</h1>

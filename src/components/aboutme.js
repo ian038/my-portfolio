@@ -16,7 +16,10 @@ class Resume extends Component {
                     <div className="about-text">
                     <h2>About Me</h2>
                     <hr/>
-                    <p>Hello, my name is Chai Ian Phua. I go by Ian. I got started in software engineering when a friend of mine asked if I would like to help with his friend's tech startup. I agreed and before I know it, I was on a never-ending journey in the world of technologies. I manage stress by participating in martial arts and gymnastics. I also love to eat and read a lot. My end goal is to have the ability to build whatever I desire efficiently and effectively.</p>
+                    <p>Hello, my name is Chai Ian Phua. I go by Ian. I got started in software engineering when a friend of mine asked if I would like to help with his friend's tech startup. 
+                        I agreed and before I know it, I was on a never-ending journey in the world of technologies. I manage stress by participating in martial arts and gymnastics. 
+                        I also love to eat and read a lot. My end goal is to have the ability to build whatever I desire efficiently and effectively.
+                    </p>
                     </div>
                     </Grid>
                 </Grid>

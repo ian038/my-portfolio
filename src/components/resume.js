@@ -63,12 +63,6 @@ export default function About() {
             jobName="Aide"
             jobDescription="Hired as an aide at Haugland Learning Center. Learnt to practice Behavioral Psychology using techniques to record behavior data and to use recorded data to customize an educational plan for children with Autism Spectrum Disorder."
             />
-            <Experience
-            start="Feb 2018"
-            end="April 2019"
-            jobName="Student Manager"
-            jobDescription="Delegated tasks to employees to ensure facility's daily goals are met through team work. Assessed and evaluated errors and risks to minimize production downtime."
-            />
             <hr style={{ borderTop: '3px solid red' }} />
             </Grid>
       </Grid>
