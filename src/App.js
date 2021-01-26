@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./App.css";
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Drawer, IconButton, Typography, Divider, List, ListItem, ListItemText } from '@material-ui/core'
+import { AppBar, Toolbar, Drawer, IconButton, Typography, Divider, List, ListItem, ListItemText, CssBaseline } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Main from './components/main';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
         transition: theme.transitions.create(['margin', 'width'], {
           easing: theme.transitions.easing.sharp,
           duration: theme.transitions.duration.leavingScreen,
-        })
+        }),
+        overflow: 'hidden',
       },
       appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -55,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 
-function App() {
+function App({ history }) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = useState(false);
@@ -68,9 +69,15 @@ function App() {
       setOpen(false);
     };
 
+    const isActive = (history, path) => {
+      if(history.location.pathname === path) return { color: '#00FFFF' }
+      else return { color: 'white' }
+    }
+
   return (
     <div>
-        <AppBar position="fixed" id="header-color" className={clsx(classes.appBar, {
+      <CssBaseline />
+        <AppBar position="relative" id="header-color" className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}>
             <Toolbar>
@@ -81,16 +88,16 @@ function App() {
                     <Link style={{ textDecoration: 'none', color: 'white' }} to="/">MyPortfolio</Link>
                 </Typography>
                 <Typography>
-                    <Link className={classes.links} to="/resume">Resume</Link>
+                    <Link className={classes.links} to="/resume" style={isActive(history, '/resume')}>Resume</Link>
                 </Typography>
                 <Typography>
-                    <Link className={classes.links} to="/aboutme">About Me</Link>
+                    <Link className={classes.links} to="/aboutme" style={isActive(history, '/aboutme')}>About Me</Link>
                 </Typography>
                 <Typography>
-                    <Link className={classes.links} to="/work">Work</Link>
+                    <Link className={classes.links} to="/work" style={isActive(history, '/work')}>Work</Link>
                 </Typography>
                 <Typography>
-                    <Link className={classes.links} to="/contact">Contact</Link>
+                    <Link className={classes.links} to="/contact" style={isActive(history, '/contact')}>Contact</Link>
                 </Typography>
             </Toolbar>
         </AppBar>
@@ -110,23 +117,23 @@ function App() {
             <Divider />
             <List>
                 <ListItem button>
-                    <ListItemText>
-                        <Link className="drawer_links" to="/resume">Resume</Link>
+                    <ListItemText onClick={() => window.location.href=`/resume`}>
+                      Resume
                     </ListItemText>
                 </ListItem>
                 <ListItem button>
-                    <ListItemText>
-                        <Link className="drawer_links" to="/aboutme">About Me</Link>
+                    <ListItemText onClick={() => window.location.href=`/aboutme`}>
+                      About Me
                     </ListItemText>
                 </ListItem>
                 <ListItem button>
-                    <ListItemText>
-                        <Link className="drawer_links" to="/work">Work</Link>
+                    <ListItemText onClick={() => window.location.href=`/work`}>
+                      Work
                     </ListItemText>
                 </ListItem>
                 <ListItem button>
-                    <ListItemText>
-                        <Link className="drawer_links" to="/contact">Contact</Link>
+                    <ListItemText onClick={() => window.location.href=`/contact`}>
+                      Contact
                     </ListItemText>
                 </ListItem>
             </List>
@@ -136,4 +143,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

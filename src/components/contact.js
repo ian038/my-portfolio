@@ -1,12 +1,23 @@
-import React, { Component } from 'react';
-import { Grid, List, ListItem, ListItemIcon } from '@material-ui/core'
+import React from 'react'
+import { Container, Grid, List, ListItem, ListItemIcon } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles';
 
-class Contact extends Component {
-    render() {
-        return (
-            <div className="contact-body">
-                <Grid container spacing={6} className="contact-grid">
-                    <Grid item xs={5} style={{ marginTop: 70 }}>
+const useStyles = makeStyles((theme) => ({
+    contactGrid: {
+      paddingTop: theme.spacing(3),
+      paddingBottom: theme.spacing(3)
+    }
+}))
+
+
+export default function Contact() {
+    const classes = useStyles()
+
+    return (
+        <div className="contact-body">
+            <Container className={classes.contactGrid}  maxWidth="auto">
+                <Grid container spacing={4} className="contact-grid">
+                    <Grid item xs={12} sm={6} md={4}>
                         <h1>Chai Ian Phua</h1>
                         <img
                             src="https://cdn2.iconfinder.com/data/icons/teen-people-face-avatar-6/500/teen_109-512.png"
@@ -15,7 +26,7 @@ class Contact extends Component {
                         />
                         <p style={{ margin: 'auto', paddingTop: '1em' }}>HTML/CSS | Javascript | SQL | NoSQL | Express | VB.Net | Python | Java</p>
                     </Grid>
-                    <Grid item xs={5} style={{ marginTop: 70 }}>
+                    <Grid item xs={12} sm={6} md={4}>
                         <h1>Contact Me</h1>
                         <hr />
                         <div className="contact-list">
@@ -36,9 +47,7 @@ class Contact extends Component {
                         </div>
                     </Grid>
                 </Grid>
-            </div>
-        );
-    }
+            </Container>
+        </div>
+    )
 }
-
-export default Contact;
