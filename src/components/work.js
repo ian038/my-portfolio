@@ -13,7 +13,8 @@ const useStyles = makeStyles(theme => ({
     card: {
         height: '100%',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        justifyContent: 'space-between'
     }
   }))
 
@@ -28,7 +29,7 @@ export default function Work() {
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container spacing={4}>
                 <Grid item xs={12} sm={6} md={4}>
-                    <Card shadow={5} className={classes.card}>
+                    <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia 
                                 component="img"
@@ -55,7 +56,7 @@ export default function Work() {
                     </Card>
                 </Grid> 
                 <Grid item xs={12} sm={6} md={4}>
-                    <Card shadow={5} className={classes.card}>
+                    <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia 
                                 component="img"
@@ -82,7 +83,7 @@ export default function Work() {
                     </Card>
                     </Grid> 
                     <Grid item xs={12} sm={6} md={4}>
-                    <Card shadow={5} className={classes.card}>
+                    <Card className={classes.card}>
                         <CardActionArea>
                             <CardMedia 
                                 component="img"
