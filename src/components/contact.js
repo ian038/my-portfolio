@@ -5,7 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     contactGrid: {
       paddingTop: theme.spacing(3),
-      paddingBottom: theme.spacing(3)
+      paddingBottom: theme.spacing(3),
+      textAlign: 'center',
+      justifyContent: 'center'
     }
 }))
 
@@ -15,8 +17,8 @@ export default function Contact() {
 
     return (
         <div className="contact-body">
-            <Container className={classes.contactGrid}  maxWidth="auto">
-                <Grid container spacing={4} className="contact-grid">
+            <Container maxWidth="auto">
+                <Grid container spacing={4} className={classes.contactGrid}>
                     <Grid item xs={12} sm={6} md={4}>
                         <h1>Chai Ian Phua</h1>
                         <img

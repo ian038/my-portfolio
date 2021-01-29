@@ -70,39 +70,26 @@
 
  /* Contact Page */
  .contact-body {
-     margin: auto;
      position: fixed;
      background: #2C3E50;  /* fallback for old browsers */
      background: -webkit-linear-gradient(to top, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
      background: linear-gradient(to top, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      width: 100%;
      height: 100%;
-     justify-content: center;
-     padding-top: 2em;
  }
 
- .contact-grid {
-     text-align: center;
-     justify-content: center;
-     width: 80%;
-     height: 550px;
-     color: black;
-     margin-bottom: 20px;
- }
-
- .contact-grid h1 {
+ .contact-body h1 {
      font-family: 'Anton', sans-serif;
-     font-size: 45px;
+     font-size: 40px;
  }
 
- .contact-grid p {
+ .contact-body p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: black;
-    padding: 1em;
  }
 
- .contact-grid hr {
+ .contact-body hr {
      border-top: 5px dotted black;
      width: 50%;
      margin: auto;
