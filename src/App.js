@@ -8,6 +8,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Main from './components/main';
 import { Link, withRouter } from 'react-router-dom';
+import Speech from './components/Speech'
 
 const drawerWidth = 240;
 
@@ -146,6 +147,7 @@ function App({ history }) {
         <Typography>
             <Link className={classes.links} to="/contact" style={isActive(history, '/contact')}>Contact</Link>
         </Typography>
+        <Speech />
     </Toolbar>
     )
 
