@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid } from '@material-ui/core'
-import Speech from './Speech'
 
 export default function Landing() {
 

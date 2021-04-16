@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'
+import db from '../firebase'
 import { Container, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import Education from './education';
@@ -16,10 +17,29 @@ const useStyles = makeStyles((theme) => ({
 
 export default function About() {
     const classes = useStyles()
+    const [education, setEducation] = useState([])
+    const [experience, setExperience] = useState([])
+
+    const fetchEducation = () => {
+      db.collection('education').get().then(snapshot => {
+        setEducation(snapshot.docs)
+      })
+    }
+
+    const fetchExperience = () => {
+      db.collection('experience').get().then(snapshot => {
+        setExperience(snapshot.docs)
+      })
+    }
+
+    useEffect(() => {
+      fetchEducation()
+      fetchExperience()
+    }, [])
 
     return (
         <div className={classes.root}>
-          <Container className={classes.resumeGrid} maxWidth="auto">
+          <Container className={classes.resumeGrid}>
             <Grid container spacing={4}>
               <Grid item xs={12} sm={6} md={4}>
               <div style={{ textAlign: 'center' }}>
@@ -42,28 +62,26 @@ export default function About() {
               </Grid>
               <Grid item xs className="resume-right-col">
               <h2 style={{ fontSize: '35px' }}>Education</h2>
-              <Education
-              start="Jan 2020"
-              end="April 2022"
-              schoolName="Cincinnati State Technical and Community College"
-              schoolDescription="Currently pursuing an Associates Degree in Software Engineering Technology. Relevant courses include but are not limited to Java, VB.Net, C, SQL and Business Intelligence."
-              />
-              <Education
-              start="Jan 2016"
-              end="Aug 2018"
-              schoolName="The Ohio State University"
-              schoolDescription="Majored in Psychology and eventually graduated with a Bachelor of Arts in August 2018."
-              />
+              {education.map((e, i) => (
+                <Education
+                key={i}
+                start={e.data().start}
+                end={e.data().end}
+                schoolName={e.data().schoolName}
+                schoolDescription={e.data().schoolDescription}
+                />
+              ))}
               <hr style={{ borderTop: '3px solid red' }} />
               <h2 style={{ fontSize: '35px' }}>Experience</h2>
-              <Experience
-              start="Jan 2019"
-              end="Feb 2020"
-              jobName="Software Engineer Intern"
-              jobDescription="Developed and designed test driven voice apps for Amazon Alexa and Google Actions. 
-              Implemented frontend library ReactJS for Musicians AI web app for better performance and a modern look.
-              Interacted with Firebase Cloud Firestore for CRUD operations."
-              />
+              {experience.map((exp, i) => (
+                <Experience
+                key={i}
+                start={exp.data().start}
+                end={exp.data().end}
+                jobName={exp.data().jobName}
+                jobDescription={exp.data().jobDescription}
+                />
+              ))}
               <hr style={{ borderTop: '3px solid red' }} />
               </Grid>
             </Grid>

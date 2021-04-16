@@ -26,7 +26,7 @@ export default function Contact() {
                             alt="avatar"
                             style={{ height: "250px" }}
                         />
-                        <p style={{ margin: 'auto', paddingTop: '1em' }}>HTML/CSS | Javascript | SQL | NoSQL | Express | VB.Net | Python | Java</p>
+                        <p style={{ margin: 'auto', paddingTop: '1em' }}>HTML/CSS | Javascript | SQL | NoSQL | Node.JS | VB.Net | Python | Java | PHP</p>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
                         <h1>Contact Me</h1>
