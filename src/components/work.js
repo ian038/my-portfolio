@@ -36,7 +36,7 @@ export default function Work() {
     return (
         <div className={classes.root}>
             <Typography component="h1" variant="h5" align="center">
-                Work
+                Projects
             </Typography>
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container spacing={4}>

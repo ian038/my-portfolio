@@ -115,8 +115,8 @@ function App({ history }) {
                       </ListItemText>
                   </ListItem>
                   <ListItem button>
-                      <ListItemText onClick={() => window.location.href=`/work`}>
-                        Work
+                      <ListItemText onClick={() => window.location.href=`/projects`}>
+                        Projects
                       </ListItemText>
                   </ListItem>
                   <ListItem button>
@@ -142,7 +142,7 @@ function App({ history }) {
             <Link className={classes.links} to="/aboutme" style={isActive(history, '/aboutme')}>About Me</Link>
         </Typography>
         <Typography>
-            <Link className={classes.links} to="/work" style={isActive(history, '/work')}>Work</Link>
+            <Link className={classes.links} to="/projects" style={isActive(history, '/projects')}>Projects</Link>
         </Typography>
         <Typography>
             <Link className={classes.links} to="/contact" style={isActive(history, '/contact')}>Contact</Link>

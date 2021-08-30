@@ -80,7 +80,7 @@ export default function About() {
                 end={exp.data().end}
                 companyName={exp.data().companyName}
                 jobName={exp.data().jobName}
-                jobDescription={exp.data().jobDescription}
+                jobProjects={exp.data().jobProjects}
               />
             ))}
             <hr style={{ borderTop: '3px solid red' }} />
