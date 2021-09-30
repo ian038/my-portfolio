@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     }
   }))
 
-export default function Work() {
+export default function Projects() {
     const classes = useStyles()
     const [work, setWork] = useState([])
 

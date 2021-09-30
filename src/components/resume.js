@@ -4,6 +4,7 @@ import { Container, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import Education from './education';
 import Experience from './experience';
+import AboutMe from './aboutme';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,6 +20,13 @@ export default function About() {
   const classes = useStyles()
   const [education, setEducation] = useState([])
   const [experience, setExperience] = useState([])
+  const [aboutMe, setAboutMe] = useState([])
+
+  const fetchAboutMe = () => {
+    db.collection('aboutme').get().then(snapshot => {
+      setAboutMe(snapshot.docs)
+    })
+  }
 
   const fetchEducation = () => {
     db.collection('education').get().then(snapshot => {
@@ -33,6 +41,7 @@ export default function About() {
   }
 
   useEffect(() => {
+    fetchAboutMe()
     fetchEducation()
     fetchExperience()
   }, [])
@@ -52,13 +61,24 @@ export default function About() {
             <h2 style={{ paddingTop: '1em', fontSize: '35px' }}>Chai Ian Phua</h2>
             <h3 style={{ color: 'gray' }}>Software Engineer</h3>
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
-            <p>Hello, pleased to meet you and welcome to my portfolio!</p>
+            <p>Forward-thinking Software Engineer with background working effectively in dynamic environment. Proud team player focused on achieving project objectives with speed and accuracy.</p>
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
+            
             <h5 style={{ fontSize: '18px' }}>Phone</h5>
             <p style={{ fontSize: '15px' }}>(614) 607-0882</p>
             <h5 style={{ fontSize: '18px' }}>Email</h5>
             <p style={{ fontSize: '15px' }}>ianphua3@gmail.com</p>
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
+            {
+              aboutMe.map((am, i) => (
+                <AboutMe
+                key={i}
+                programmingLanguages={am.data().programmingLanguages}
+                toolsAndTechnologies={am.data()['Tools&Technologies']}
+                certifications={am.data().Certifications}
+                />
+              ))
+            }
           </Grid>
           <Grid item xs className="resume-right-col">
             <h2 style={{ fontSize: '35px' }}>Education</h2>

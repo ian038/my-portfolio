@@ -110,18 +110,8 @@ function App({ history }) {
                       </ListItemText>
                   </ListItem>
                   <ListItem button>
-                      <ListItemText onClick={() => window.location.href=`/aboutme`}>
-                        About Me
-                      </ListItemText>
-                  </ListItem>
-                  <ListItem button>
                       <ListItemText onClick={() => window.location.href=`/projects`}>
                         Projects
-                      </ListItemText>
-                  </ListItem>
-                  <ListItem button>
-                      <ListItemText onClick={() => window.location.href=`/contact`}>
-                        Contact
                       </ListItemText>
                   </ListItem>
               </List>
@@ -139,13 +129,7 @@ function App({ history }) {
             <Link className={classes.links} to="/resume" style={isActive(history, '/resume')}>Resume</Link>
         </Typography>
         <Typography>
-            <Link className={classes.links} to="/aboutme" style={isActive(history, '/aboutme')}>About Me</Link>
-        </Typography>
-        <Typography>
             <Link className={classes.links} to="/projects" style={isActive(history, '/projects')}>Projects</Link>
-        </Typography>
-        <Typography>
-            <Link className={classes.links} to="/contact" style={isActive(history, '/contact')}>Contact</Link>
         </Typography>
         <Speech />
     </Toolbar>

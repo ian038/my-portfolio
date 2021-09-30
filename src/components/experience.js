@@ -5,7 +5,6 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord'
 class Experience extends Component {
     render() {
         const { start, end, companyName, jobName, jobProjects } = this.props
-        console.log(jobProjects)
 
         return (
             <Grid container spacing={4}>
