@@ -71,6 +71,10 @@
   padding: 8px;
 }
 
+.social-links i:hover {
+  color: grey;
+}
+
 /* Work Page */
 .projects-grid {
   display: flex;

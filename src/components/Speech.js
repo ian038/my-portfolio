@@ -13,13 +13,11 @@ export default function Speech() {
     const { transcript } = useSpeechRecognition({ commands })
     const [redirectUrl, setRedirectUrl] = useState("")
 
-    const pages = ["home", "resume", "about me", "work", "contact"]
+    const pages = ["home", "resume", "projects"]
     const urls = {
       "home": "/",
       "resume": "/resume",
-      "about me": "/aboutme",
-      "work": "/work",
-      "contact": "/contact"
+      "projects": "/projects"
     }
 
     useEffect(() => {

@@ -30,7 +30,7 @@ export default function Landing() {
                                 <i className="fa fa-free-code-camp" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <h3 style={{ fontWeight: 'bold' }}>This portfolio can be navigated using your voice. For example: just click START and say "open work".</h3>
+                        <h3 style={{ fontWeight: 'bold' }}>This portfolio can be navigated using your voice. For example: just click START and say "open projects".</h3>
                         <h3 style={{ fontWeight: 'bold' }}>Note: Unavailable for mobile devices.</h3>
                      </div>
                 </Grid>
