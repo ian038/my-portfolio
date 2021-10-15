@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutMe({ programmingLanguages, toolsAndTechnologies, certifications }) {
     return (
         <div>
-            <h5 style={{ fontSize: '18px' }}>Programming Languages</h5>
+            <h5 style={{ fontSize: '16px' }}>Programming Languages</h5>
             {
                 programmingLanguages.map((pl, i) => (
                     <p key={i} style={{ fontSize: '15px' }}>{pl}</p>
@@ -11,7 +11,7 @@ export default function AboutMe({ programmingLanguages, toolsAndTechnologies, ce
             }
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
 
-            <h5 style={{ fontSize: '18px' }}>Tools And Technologies</h5>
+            <h5 style={{ fontSize: '16px' }}>Tools And Technologies</h5>
             {
                 toolsAndTechnologies.map((t, i) => (
                     <p key={i} style={{ fontSize: '15px' }}>{t}</p>
@@ -19,7 +19,7 @@ export default function AboutMe({ programmingLanguages, toolsAndTechnologies, ce
             }
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
 
-            <h5 style={{ fontSize: '18px' }}>Certifications</h5>
+            <h5 style={{ fontSize: '16px' }}>Certifications</h5>
             {
                 certifications.map((c, i) => (
                     <a 

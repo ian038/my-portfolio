@@ -64,9 +64,9 @@ export default function About() {
             <p>Forward-thinking Software Engineer with background working effectively in dynamic environment. Proud team player focused on achieving project objectives with speed and accuracy.</p>
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
             
-            <h5 style={{ fontSize: '18px' }}>Phone</h5>
+            <h5 style={{ fontSize: '16px' }}>Phone</h5>
             <p style={{ fontSize: '15px' }}>(614) 607-0882</p>
-            <h5 style={{ fontSize: '18px' }}>Email</h5>
+            <h5 style={{ fontSize: '16px' }}>Email</h5>
             <p style={{ fontSize: '15px' }}>ianphua3@gmail.com</p>
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
             {
