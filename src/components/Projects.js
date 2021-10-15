@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import db from '../firebase'
-import { Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography, Grid, Container } from '@material-ui/core'
+import { Card, CardActions, CardContent, CardMedia, Button, Typography, Grid, Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -43,21 +43,19 @@ export default function Projects() {
                     {work.map((w, i) => (
                         <Grid key={i} item xs={12} sm={6} md={4}>
                         <Card className={classes.card}>
-                            <CardActionArea>
-                                <CardMedia 
-                                    component="img"
-                                    image={w.data().image}
-                                    height="176"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        {w.data().name}
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        {w.data().description}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
+                            <CardMedia 
+                                component="img"
+                                image={w.data().image}
+                                height="176"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    {w.data().name}
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    {w.data().description}
+                                </Typography>
+                            </CardContent>
                             <CardActions>
                                 <Button size="small" color="primary" href={w.data().github}>
                                     GitHub
