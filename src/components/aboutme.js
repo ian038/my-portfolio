@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function AboutMe({ programmingLanguages, toolsAndTechnologies, certifications }) {
+
+    const sortByRecent = (a, b) => {
+        return b.key - a.key
+    }
+
     return (
         <div>
             <h5 style={{ fontSize: '16px' }}>Programming Languages</h5>
@@ -27,10 +32,10 @@ export default function AboutMe({ programmingLanguages, toolsAndTechnologies, ce
                     href={c.Url} 
                     target="_blank" 
                     rel="noreferrer noopener"
-                    style={{ fontSize: '15px' }}>
-                      {c.Name}
+                    >
+                        <p style={{ fontSize: '15px' }}>{c.Name}</p>
                     </a>
-                ))
+                )).sort(sortByRecent)
             }
             <hr style={{ borderTop: '3px solid #833fb2', width: '100%' }} />
         </div>
